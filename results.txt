@@ -1,0 +1,12 @@
+SELECT * FROM movies;
+SELECT name FROM people;
+UPDATE people SET name = 'Krusty The Clown' WHERE name = 'Crusty the Clown';
+SELECT name FROM people WHERE name = 'Homer Simpson';
+DELETE FROM movies WHERE title = 'Batman Begins';
+INSERT INTO people (name) VALUES ('Bart Simpson');
+DELETE FROM people WHERE name = 'Eric Cartman';
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers', 2020, '00:00');
+UPDATE movies SET show_time = '20:45' WHERE title = 'Iron Man 3';
+
+DELETE FROM movies WHERE year = 2013
+DELETE FROM movies WHERE title IN ('Thor', 'Doctor Strange', 'Black Panther');
